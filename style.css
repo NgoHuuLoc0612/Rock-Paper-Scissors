@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.game-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.score {
+    text-align: center;
+}
+
+.score p:first-child {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.score p:last-child {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.choice-button {
+    background-color: #e9e9e9;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.choice-button:hover {
+    transform: scale(1.05);
+    background-color: #dcdcdc;
+}
+
+.choice-button img {
+    width: 80px;
+    height: 80px;
+    display: block; /* Removes extra space below the image */
+}
+
+.result-display {
+    margin-bottom: 30px;
+    min-height: 80px; /* Ensure space is reserved */
+}
+
+.result-display p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+#result-message {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #007bff; /* Default color */
+}
+
+/* Result message specific colors */
+.result-display #result-message.win {
+    color: #28a745; /* Green */
+}
+
+.result-display #result-message.lose {
+    color: #dc3545; /* Red */
+}
+
+.result-display #result-message.tie {
+    color: #ffc107; /* Yellow/Orange */
+}
+
+#reset-button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#reset-button:hover {
+    background-color: #5a6268;
+}
